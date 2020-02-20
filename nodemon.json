@@ -1,0 +1,17 @@
+{
+    "exec": "node ./mock-server/server.js",
+    "restartable": "rs",
+    "ignore": [
+        ".git",
+        "dist",
+        ".cache",
+        "routerMap.json",
+        "README.md",
+        "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "watch": [
+        "./mock-server"
+    ],
+    "ext": "js json"
+}

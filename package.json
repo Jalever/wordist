@@ -1,0 +1,49 @@
+{
+  "name": "wordist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock": "nodemon",
+    "dev": "webpack-dev-server --inline --progress --colors --config build/webpack.dev.conf.js",
+    "start": "run-p dev mock",
+    "build": "node ./build/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "autodll-webpack-plugin": "^0.4.2",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "vue-loader": "^15.9.0",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "element-ui": "^2.13.0",
+    "glob": "^7.1.6",
+    "koa": "^2.11.0",
+    "koa-logger": "^3.2.1",
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.11"
+  }
+}

@@ -1,0 +1,160 @@
+a,
+a:focus,
+a:hover,
+a:active {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none !important;
+}
+
+.link {
+  cursor: pointer;
+  color: #409eff;
+
+  &:hover {
+    color: #66b1ff;
+  }
+}
+
+.red {
+  color: red;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-5{
+  margin-left: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background-color: #f4f4f4;
+  font-size: 14px;
+}
+
+#app,
+html,
+body {
+  min-width: 1200px;
+}
+
+:global(.el-card__body) {
+  >div {
+    >div.el-card {
+      color: #666;
+      box-shadow: none;
+      border: 0;
+
+      >div.el-card__header h3 {
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        display: inline-block;
+      }
+
+      >div {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.custom-scroll {
+  &::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 4px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c1c1c1;
+  }
+
+  &::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+}
+
+.hideTextLine1 {
+  //一行文字溢出省略号
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
