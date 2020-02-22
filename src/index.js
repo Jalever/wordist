@@ -2,6 +2,7 @@ import Vue from 'vue';
 import App from './App';
 import Element from 'element-ui';
 import store from "@/store/index";
+import router from "@/router/index";
 import 'normalize.css'; // Note this
 import "./index.scss";
 import "element-ui/lib/theme-chalk/index.css";
@@ -13,6 +14,7 @@ Vue.use(Element, {
 new Vue({
   el: '#app',
   store,
+  router,
   template: '<App/>',
   components: { App }
 });
