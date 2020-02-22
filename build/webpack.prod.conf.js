@@ -16,7 +16,12 @@ module.exports = merge(baseConfig, {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader',
+          options: {
+            modules: true
+          }
+        }, 'postcss-loader', 'sass-loader']
       }
     ]
   },

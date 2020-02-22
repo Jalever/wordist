@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const AutoDllPlugin = require('autodll-webpack-plugin');
 
-
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "../src/index.js")

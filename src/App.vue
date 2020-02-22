@@ -1,16 +1,16 @@
 <template>
     <div>
-      <main-page></main-page>
+      <layout></layout>
     </div>
   </template>
   
   <script>
-    import MainPage from "@/views/mainpage";
+    import Layout from "@/views/layout/Index";
     export default {
       name: 'App',
       created() {},
       components: {
-        MainPage
+        Layout
       }
     }
   </script>

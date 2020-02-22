@@ -1,5 +1,9 @@
 <template>
   <div :class="$style.wrapper">
+    <Header>
+      <p slot="upper">parent upper slot</p>
+      <p slot="lower">parent lower slot</p>
+    </Header>
     <p :class="$style.header">
       <el-input v-model="title" /><el-button type="primary" @click="onAdd">新增</el-button>
     </p>
@@ -7,7 +11,12 @@
 </template>
 
 <script>
+import Header from "./Header";
+console.log(Header);
 export default {
+  components: {
+    Header
+  },
   data() {
     return {
       title: ""
