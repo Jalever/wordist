@@ -12,7 +12,14 @@ module.exports = merge(baseConfig, {
     port: 9090,
     historyApiFallback: true,
     open: true,
-    contentBase: path.resolve(__dirname, "../dist")
+    contentBase: path.resolve(__dirname, "../dist"),
+    proxy: {
+      "/api": {
+        "changeOrigin": true,
+        "secure": false,
+        "target": "http://47.106.132.253:7001"
+      },
+    }
   },
   module: {
     rules: [

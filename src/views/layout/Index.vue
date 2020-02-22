@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Header from "./Header";
-console.log(Header);
+// import Header from "./Header";
+// console.log(Header);
 export default {
   components: {
-    Header
+    
   },
   data() {
     return {
