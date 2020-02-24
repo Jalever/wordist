@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
 export default {
   data() {
     return {};
@@ -36,6 +37,7 @@ export default {
         this.$router.push({
             path: "/login"
         });
+        Cookies.remove('token');
     }
   }
 };

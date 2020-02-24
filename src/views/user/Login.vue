@@ -12,7 +12,7 @@
 
       <el-form-item label>
         <el-checkbox v-model="form.rememberMe" :true-label="1" :false-label="0">记住我</el-checkbox>
-        <router-link to="register" style="margin-left: 50px;">
+        <router-link to="/register" style="margin-left: 50px;">
           <el-link type="primary">注册</el-link>
         </router-link>
       </el-form-item>
@@ -60,7 +60,7 @@ export default {
         setToken(data.data.token);
         this.$store.commit("setInit", data.data);
         this.$router.push({
-          path: "/"
+          path: "/home"
         });
       } catch (error) {
         errorMessage(error);
