@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.wrapper">
-    <span :class="$style.userArea" @click="onTurnoff">退出</span>
+    <span :class="$style.userArea" @click="onExist">退出</span>
     <span :class="$style.userArea">{{userName}}</span>
     <span :class="$style.userArea">
       <el-button type="primary" @click="handleAdd" style="margin-top:10px">添加</el-button>
@@ -33,7 +33,7 @@ export default {
         this.$emit("onAdd");
     },
     //退出
-    onTurnoff() {
+    onExist() {
         this.$router.push({
             path: "/login"
         });
