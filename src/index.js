@@ -10,17 +10,6 @@ import 'normalize.css'; // Note this
 import "./index.scss";
 import "element-ui/lib/theme-chalk/index.css";
 
-
-console.warn('test');
-// console.log(test);
-console.log('\n');
-
-console.log("----------------------\n\n\n\n\n");
-console.log("\n\n\n\n\n");
-console.log(ELEMENT);
-console.log("\n\n\n\n\n");
-console.log("----------------------\n\n\n\n\n");
-
 Vue.prototype.$api = api;
 Vue.use(ELEMENT, {
   size: "small"
